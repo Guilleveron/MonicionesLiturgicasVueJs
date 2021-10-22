@@ -1,0 +1,53 @@
+.boton {
+    cursor: pointer;
+	display: inline-block;
+	font-weight: bold;
+	padding: 6px 12px;
+	background: $negroOpaco;
+	color: $blanco;
+	border: 1px solid $negro;
+	border-radius: 8px;
+	text-decoration: none;
+    &:hover {
+        opacity: .8;
+		color: $negro;
+		background: $blanco;
+    }
+}
+
+.boton2 {
+    cursor: pointer;
+	display: inline-block;
+	font-weight: bold;
+	padding: 6px 12px;
+	background: $primary;
+	color: $blanco;
+	border: 1px solid $primary;
+	border-radius: 8px;
+	text-decoration: none;
+    &:hover {
+		opacity: .8;
+		color: $primary;
+		background: $blanco;
+    }
+}
+
+.boton3 {
+    cursor: pointer;
+	display: inline-block;
+	font-weight: bold;
+	padding: 6px 12px;
+	background: $primary;
+	color: $blanco;
+	border: 1px solid $blanco;
+	border-radius: 8px;
+	margin: 10px;
+	text-decoration: none;
+    &:hover {
+		color: $primary;
+		background: $blanco;
+		border: 1px solid $primary;
+    }
+}
+
+

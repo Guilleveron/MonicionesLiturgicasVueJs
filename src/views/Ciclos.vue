@@ -1,8 +1,10 @@
 <template>
-  <div id="app">
-      <cabecera></cabecera>
+  <div>
+    <h1>Ciclos</h1>
+    <cabecera></cabecera>
   </div>
 </template>
+
 <script>
 // @ is an alias to /src
 import Cabecera from '@/components/Cabecera.vue'
@@ -14,6 +16,3 @@ export default {
   }
 }
 </script>
-
-
-<style lang="scss" src="./scss/main.scss"></style>
