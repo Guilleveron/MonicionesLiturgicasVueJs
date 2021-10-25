@@ -1,21 +1,20 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="@/assets/Logo.svg">
-    <Cabecera></Cabecera>
-    <Inicio msg="Hola"/>
+  <div>
+    <Inicio/>
+    
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Inicio from '@/components/Inicio.vue'
-import Cabecera from '@/components/Cabecera.vue'
+import MonicionActual from '@/components/MonicionActual'
 
 export default {
-  name: 'Home',
+  name: 'Inicio',
   components: {
     Inicio,
-    Cabecera
+    MonicionActual
   }
 }
 </script>
