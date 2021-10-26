@@ -16,6 +16,18 @@
 				
 				Para ponerse en contacto con nosotros, puede escribirnos a  <a href="mailto: monicionesliturgicas@gmail.com"><b>monicionesliturgicas@gmail.com</b></a></p>		
 		</div>
+		<Pie/>
 
   </div>
 </template>
+
+<script>
+import Pie from '@/components/Pie.vue'
+
+
+export default {
+  components: {
+    Pie
+  }
+}
+</script>

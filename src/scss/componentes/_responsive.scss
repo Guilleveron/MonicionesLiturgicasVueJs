@@ -3,7 +3,7 @@
 /* PANTALLAS EXTRA ANCHAS */
 @media(min-width: 1400px){
 
-    header, .footer {
+    .header, .footer {
         width: 100%;
         margin: auto;
     }
@@ -21,7 +21,7 @@
 /* PANTALLAS ANCHAS (Notebooks y Computadoras de Escritorio) */
 @media(min-width: 1024px){
 
-    header, .footer {
+    .header, .footer {
         width: 100%;
         margin: auto;
     }
