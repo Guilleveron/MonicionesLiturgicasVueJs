@@ -15,7 +15,7 @@
             </div>
         </div>
         <!-- COOKIES -->
-         <section class="cookies">
+         <!-- <section class="cookies">
             <h5 class="cookies__titulo">Política de Cookies</h5> 
             <p class="cookies__texto">
                 Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación.
@@ -26,7 +26,7 @@
                 <button class="cookies__boton cookies__boton--no">Denegar</button>
                 <button class="cookies__boton cookies__boton--si">Aceptar</button>
             </div>
-        </section>
+        </section> -->
         <!-- No borrar, aquí se generarán todas las etiquetas <script> si acepta el usuario -->
         <div id="nuevosScripts"></div>
 
