@@ -84,27 +84,47 @@ export default {
     },
     funcionProgramada() {
       let objFecha = new Date();
-        console.log(objFecha);
-      let objFecha2 = this.sumarDias(objFecha, 4);
+      //console.log(objFecha);
+
+      let numeroASumarFecha = null;
+
+      if (objFecha.getDay() == 0){
+        numeroASumarFecha = 7;
+      }else if(objFecha.getDay() == 1){
+        numeroASumarFecha = 6;
+      }else if(objFecha.getDay() == 2){
+        numeroASumarFecha = 5;
+      }else if(objFecha.getDay() == 3){
+        numeroASumarFecha = 4;
+      }else if(objFecha.getDay() == 4){
+        numeroASumarFecha = 3;
+      }else if(objFecha.getDay() == 5){
+        numeroASumarFecha = 2;
+      }else if(objFecha.getDay() == 6){
+        numeroASumarFecha = 1;
+      };
+      //console.log(numeroASumarFecha);
+      
+      let objFecha2 = this.sumarDias(objFecha, numeroASumarFecha);
       let dia2  = ('0' + objFecha2.getDate()).slice(-2);
       let mes2  = ('0' + (objFecha2.getMonth()+1)).slice(-2);
       let anio2 = objFecha2.getFullYear();
       this.cargarMonicionDominical1(anio2 + "-" + mes2 + "-" + dia2);
-      console.log(anio2 + "-" + mes2 + "-" + dia2);
+      //console.log(anio2 + "-" + mes2 + "-" + dia2);
 
       let objFecha3 = this.sumarDias(objFecha, 7);
       let dia3  = ('0' + objFecha3.getDate()).slice(-2);
       let mes3  = ('0' + (objFecha3.getMonth()+1)).slice(-2);
       let anio3 = objFecha3.getFullYear();
       this.cargarMonicionDominical2(anio3 + "-" + mes3 + "-" + dia3);
-      console.log(anio3 + "-" + mes3 + "-" + dia3);
+      //console.log(anio3 + "-" + mes3 + "-" + dia3);
 
       let objFecha4 = this.sumarDias(objFecha, 7);
       let dia4  = ('0' + objFecha4.getDate()).slice(-2);
       let mes4  = ('0' + (objFecha4.getMonth()+1)).slice(-2);
       let anio4 = objFecha4.getFullYear();
       this.cargarMonicionDominical3(anio4 + "-" + mes4 + "-" + dia4);
-      console.log(anio4 + "-" + mes4 + "-" + dia4);
+      //console.log(anio4 + "-" + mes4 + "-" + dia4);
     },
     cargarMonicionesAlIniciarElDia(){
     setTimeout(this.funcionProgramada(), this.hora());
