@@ -1,5 +1,15 @@
 <template>
   <div>
-    <h1>Monicion</h1>
+    <Monicion/>
   </div>
 </template>
+
+<script>
+import Monicion from '@/components/CompMonicion'
+
+export default {
+  components:{
+    Monicion
+  },
+}
+</script>

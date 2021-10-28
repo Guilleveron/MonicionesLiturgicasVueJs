@@ -37,22 +37,34 @@
                 </div>
             </div> 
         </nav>
-        <router-view/>
-    
-        <ul id="box-search"></ul>
-    
-        
+        <div class="principal">
+            <router-view/>  
+            <Pie/>
+        </div>       
 
     </div>
 </template>
 <script>
-import Cabecera from '@/components/Cabecera.vue'
+import Pie from '@/components/CompPie.vue'
 
 
 export default {
   name: 'App',
   components: {
-    Cabecera
+      Pie
+
+  },
+  data(){
+    return{
+      dia: '',
+      monicionDelDia: {}
+    }  
+  },
+  methods:{
+      
+  },
+  created: function(){
+
   }
 }
 

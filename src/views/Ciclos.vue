@@ -1,17 +1,15 @@
 <template>
   <div>
-    <h1>Ciclos</h1>
-    
+    <Ciclos/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
+import Ciclos from '@/components/CompCiclos'
 
 export default {
-  components: {
-    
-  }
+  components:{
+    Ciclos
+  },
 }
 </script>

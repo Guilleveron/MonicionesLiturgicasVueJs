@@ -1,23 +1,22 @@
 <template>
   <div>
-    <MonicionActual/>
+    <MonicionActual/> 
     <Carousel/>
     <MonicionEspecial/>
     <MonicionesDominicales/>
     <MonicionMariana/>
-    <Pie/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import MonicionActual from '@/components/MonicionActual'
-import Carousel from '@/components/Carousel'
-import MonicionEspecial from '@/components/MonicionEspecial'
-import MonicionesDominicales from '@/components/MonicionesDominicales'
-import MonicionMariana from '@/components/MonicionMariana'
-import Pie from '@/components/Pie.vue'
+import MonicionActual from '@/components/CompMonicionActual'
+import Carousel from '@/components/CompCarousel'
+import MonicionEspecial from '@/components/CompMonicionEspecial'
+import MonicionesDominicales from '@/components/CompMonicionesDominicales'
+import MonicionMariana from '@/components/CompMonicionMariana'
 
+import { mapState, mapActions } from "vuex";
 
 export default {
   components: {
@@ -25,8 +24,13 @@ export default {
     Carousel,
     MonicionEspecial,
     MonicionesDominicales,
-    MonicionMariana,
-    Pie
+    MonicionMariana
+  },
+  computed:{
+    //...mapState([''])
+  },
+  methods:{
+    //...mapActions([''])
   }
 }
 </script>

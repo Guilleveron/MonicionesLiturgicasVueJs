@@ -1,5 +1,5 @@
 <template>
-    <div class="principal">
+    <div>
         <div class="social">
             <h3 class="text-center">Contáctanos</h3>
             <div class="links">
