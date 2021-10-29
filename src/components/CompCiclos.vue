@@ -1,7 +1,7 @@
 <template>
     <div class="container-md">
         <div class="row justify-content-center">
-            <div class="col-auto"><a :href="'/moniciones/ciclo/'+ciclo+'?santo='+santo"><img class="imgT" v-bind:src="imagen" :alt="'Moniciones del Ciclo '+ciclo+' - Evangelio Según San '+santo"></a></div>
+            <div class="col-auto"><img class="imgT" v-bind:src="imagen" :alt="'Moniciones del Ciclo '+ciclo+' - Evangelio Según San '+santo"></div>
             <div class="col-auto text-center">
                 <h3>Moniciones Litúrgicas<br>Ciclo {{ ciclo }}<br>Evangelio según San {{santo}}</h3>
             </div>
@@ -120,7 +120,16 @@ export default {
         const santo = this.$route.query.santo;
         this.ciclo = ciclo;
         this.santo = santo;
-        this.imagen = 'img/San '+santo+'.png';
+        
+        if (santo == 'Mateo'){
+            this.imagen = '/img/San Mateo.664b3b68.png'
+        }else if (santo == 'Marcos'){
+            this.imagen = '/img/San Marcos.f1674d56.png'
+        }else if (santo == 'Lucas'){
+            this.imagen = '/img/San Lucas.78069de4.png'
+        }
+
+        //console.log(this.imagen);
     }
   },
   created: function(){
