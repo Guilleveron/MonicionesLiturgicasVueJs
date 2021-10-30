@@ -40,19 +40,49 @@
         <ul id="box-search" v-on:click="ocultar_buscador()"></ul>
         <div class="principal" v-on:click="ocultar_buscador()">
             <router-view/>  
-            <Pie/>
+            <div class="social">
+            <h3 class="text-center">Contáctanos</h3>
+                <div class="links">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto: monicionesliturgicas@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- COOKIES -->
+            <section class="cookies">
+                <h5 class="cookies__titulo">Política de Cookies</h5> 
+                <p class="cookies__texto">
+                    Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación.
+                    <br>
+                    <b>¿Aceptas nuestras Cookies?</b>
+                </p>
+                <div class="cookies__botones">
+                    <button class="cookies__boton cookies__boton--no" v-on:click="denegarCookies()">Denegar</button>
+                    <button class="cookies__boton cookies__boton--si" v-on:click="aceptarCookies()">Aceptar</button>
+                </div>
+            </section>
+            <!-- No borrar, aquí se generarán todas las etiquetas <script> si acepta el usuario -->
+            <div id="nuevosScripts"></div>
+
+            <!-- COPYRIGHT 2021 -->
+            <footer class="footer">
+                <p>Copyright © 2021 Moniciones Litúrgicas. Todos los derechos reservados.</p>
+            </footer>
         </div>       
 
     </div>
 </template>
 <script>
-import Pie from '@/components/CompPie.vue'
-
 
 export default {
   name: 'App',
   components: {
-      Pie
 
   },
   data(){
@@ -122,10 +152,97 @@ export default {
                 li[i].style.display = "none";
             }
         }
+    },
+    //===================================COOKIES===================================//
+    //Mensaje de COOKIES
+        //======================================================================
+        // COOKIES
+        //======================================================================
+
+        //-----------------------------------------------------
+        // Configuración
+        //-----------------------------------------------------
+    contenidoScriptsCookies () {
+            ////////////  ¿Google Analítics? /////////////
+            ////////////  ¿Facebook Pixel? /////////////
+            ////////////  ¿Admob? /////////////
+            ////////////  etc  /////////////
+    },
+        //-----------------------------------------------------
+        // Funciones
+        //-----------------------------------------------------
+
+        /**
+          * Método que oculta la sección de Cookie para siempre
+          */
+    ocultarCookie() {
+        const seccionCookie = document.querySelector('section.cookies');
+        // Borra la sección de cookies en el HTML
+        seccionCookie.remove();
+    },
+    /**
+      * Método que marca las cookies como aceptadas
+      */
+    aceptarCookies() {
+        // Oculta el HTML de cookies
+        this.ocultarCookie();
+        // Guarda que ha aceptado
+        localStorage.setItem('cookie', true);
+        // Tu codigo a ejecutar si aceptan las cookies
+        this.ejecutarSiAcepta();
+    },
+    /**
+      * Método que marca las cookies como denegadas
+      */
+    denegarCookies() {
+        // Oculta el HTML de cookies
+        this.ocultarCookie();
+        // Guarda que ha aceptado
+        localStorage.setItem('cookie', false);
+    },
+    /**
+      * Método que ejecuta tu código si aceptan las cookies
+      */
+    ejecutarSiAcepta() {
+        const urlsScriptsCookies = ['https://analytics.google.com', 'https://facebook.com'];
+        const nuevosScripts = document.querySelector('#nuevosScripts');
+        // Crea los <script>
+        urlsScriptsCookies.forEach((url) => {
+            const nuevoScript = document.createElement('script');
+            nuevoScript.setAttribute('src', url);
+            nuevosScripts.appendChild(nuevoScript);
+        });
+        // Lanza los códigos
+        this.contenidoScriptsCookies();
+    },
+    /**
+      * Método que inicia la lógica
+      */
+    iniciar() {
+        // Comprueba si en el pasado el usuario ha marcado una opción
+        if (localStorage.getItem('cookie') !== null) {
+            if(localStorage.getItem('cookie') === 'true') {
+                // Aceptó
+                this.aceptarCookies();
+            } else {
+                // No aceptó
+                this.denegarCookies();
+            }
+        }
     }
+    //-----------------------------------------------------
+    // Eventos
+    //-----------------------------------------------------
+    //const cookieSi = document.querySelector('.cookies__boton--si');
+    //const cookieNo = document.querySelector('.cookies__boton--no');
+    //cookieSi.addEventListener('click',aceptarCookies, false);
+    //cookieNo.addEventListener('click',denegarCookies, false);
+   
   },
   created: function(){
         this.cargarMonicionesBuscador();
+        // Activa el código de Cookie. Comenta si quieres desactivarlo.
+        this.iniciar();
         
   }
 }
