@@ -1,5 +1,14 @@
 <template>
   <div>
-    <h1>Buscar</h1>
+    <Buscador/>
   </div>
 </template>
+<script>
+import Buscador from '@/components/CompBuscador'
+
+export default {
+  components:{
+    Buscador
+  },
+}
+</script>

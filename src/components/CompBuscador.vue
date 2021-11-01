@@ -1,0 +1,35 @@
+<template>
+    <div class="buscadorMonicion">
+            <form method="get" class="d-flex" id="formularioBuscador">
+                <input name="monición" type="search" id="formulario" :value="busqueda" class="form-control me-1" autocomplete="off" placeholder="Día, Semana, Solemnidad o Festividad - Tiempo - Ciclo">
+                <button class="btn btn-outline-primary" id="botonFormulario" type="submit" value="Buscar">Buscar<i class="fas fa-search" ></i></button>
+            </form>
+            <ul id="resultado" class="resultadoBuscador"></ul>	
+    </div>
+</template>
+
+<script>
+export default {
+  name: 'Buscador',
+  props:{
+  },
+  data (){
+    return {
+        busqueda: ''
+    }
+  },
+  computed:{
+
+  },
+  created: function(){
+      this.cargarBusqueda();
+  },
+  methods:{
+      cargarBusqueda(){
+        const busqueda = this.$route.query.monición;
+        this.busqueda = busqueda;
+        //console.log(this.busqueda);
+    }
+  }
+}
+</script>
