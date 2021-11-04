@@ -59,8 +59,7 @@ export default {
   },
   data(){
     return{
-      dia: '',
-      monicionDelDia: {}
+      
     }  
   },
   methods:{
@@ -110,11 +109,21 @@ export default {
         let box_search = document.getElementById("box-search");
         let filter = inputSearch.value.toUpperCase();
         let li = box_search.getElementsByTagName("li");
+
+
+        const removeAccents = (str) => {
+            return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        }
+        let filter2 = removeAccents(filter);
+        //console.log(filter2);
         //Recorriendo elementos a filtrar mediante los "li"
         for (let i = 0; i < li.length; i++){
             let a = li[i].getElementsByTagName("a")[0];
             let textValue = a.textContent || a.innerText;
-            if(textValue.toUpperCase().indexOf(filter) > -1){
+            
+            let textValue2 = removeAccents(textValue);
+
+            if(textValue2.toUpperCase().indexOf(filter2) > -1){
                 li[i].style.display = "";
                 box_search.style.display = "block";
                 if (inputSearch.value === ""){
