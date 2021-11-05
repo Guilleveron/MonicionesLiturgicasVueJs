@@ -6,7 +6,7 @@
         <p><b>Ciclo {{ monicionMariana.ciclo }} - <b>Tiempo:</b> {{ monicionMariana.tiempo }}</b></p>
         <h5>Monición de Entrada</h5>
         <p>{{ monicionMariana.entrada }}</p>
-        <button class="boton2" :id="'boton2'+monicionMariana.id" v-on:click="mostrar('flotante2'+monicionMariana.id);cerrar('boton2'+monicionMariana.id)" >Leer más   <i class="fas fa-book-reader"></i></button>
+        <a class="boton2" :id="'boton2'+monicionMariana.id" v-on:click="mostrar('flotante2'+monicionMariana.id);cerrar('boton2'+monicionMariana.id)" >Leer más   <i class="fas fa-book-reader"></i></a>
         <div class="flotantes" :id="'flotante2'+monicionMariana.id">
           <h5>Monición de las Lecturas</h5>
           <p>{{ monicionMariana.lecturas }}</p>
@@ -25,7 +25,7 @@
           <p>{{ monicionMariana.comunion }}</p>
           <h5>Monición de Despedida</h5>
           <p>{{ monicionMariana.despedida }}</p>
-          <button class="boton2" v-on:click="mostrar('boton2'+monicionMariana.id);cerrar('flotante2'+monicionMariana.id)">Cerrar  <i class="far fa-times-circle"></i></button>
+          <a class="boton2" v-on:click="mostrar('boton2'+monicionMariana.id);cerrar('flotante2'+monicionMariana.id)">Cerrar  <i class="far fa-times-circle"></i></a>
         </div>	
       </section>
   </div>

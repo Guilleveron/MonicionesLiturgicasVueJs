@@ -6,7 +6,7 @@
         <p><b>Ciclo {{ monicionEspecial.ciclo }} - <b>Tiempo:</b> {{ monicionEspecial.tiempo }}</b></p>
         <h5>Monición de Entrada</h5>
         <p>{{ monicionEspecial.entrada }}</p>
-        <button class="boton2" :id="'boton'+monicionEspecial.id" v-on:click="mostrar('flotante'+monicionEspecial.id);cerrar('boton'+monicionEspecial.id)" >Leer más   <i class="fas fa-book-reader"></i></button>
+        <a class="boton2" :id="'boton'+monicionEspecial.id" v-on:click="mostrar('flotante'+monicionEspecial.id);cerrar('boton'+monicionEspecial.id)" >Leer más   <i class="fas fa-book-reader"></i></a>
         <div class="flotantes" :id="'flotante'+monicionEspecial.id">
           <h5>Monición de las Lecturas</h5>
           <p>{{ monicionEspecial.lecturas }}</p>
@@ -25,7 +25,7 @@
           <p>{{ monicionEspecial.comunion }}</p>
           <h5>Monición de Despedida</h5>
           <p>{{ monicionEspecial.despedida }}</p>
-          <button class="boton2" v-on:click="mostrar('boton'+monicionEspecial.id);cerrar('flotante'+monicionEspecial.id)">Cerrar  <i class="far fa-times-circle"></i></button>
+          <a class="boton2" v-on:click="mostrar('boton'+monicionEspecial.id);cerrar('flotante'+monicionEspecial.id)">Cerrar  <i class="far fa-times-circle"></i></a>
         </div>	
       </section>
   </div>

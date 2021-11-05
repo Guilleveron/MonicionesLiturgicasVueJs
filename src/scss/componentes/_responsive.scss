@@ -81,6 +81,9 @@
             font-size: 16px!important;
         }
     }
+    #todasLasMoniciones, #monicionCiclos {
+        margin: 20px auto 60px auto;
+    }
 }
 
 /* PANTALLAS PEQUEÑAS (TABLETS)*/
@@ -159,7 +162,7 @@
         }
     }
     #todasLasMoniciones, #monicionCiclos {
-        margin: 18px auto;
+        margin: 20px auto 60px auto;
         ul{
             margin-bottom: 8px;
         }
@@ -262,5 +265,8 @@
         input, button {
         font-size: 14px !important;
         }
+    }
+    #todasLasMoniciones {
+        margin: 20px auto 180px auto;
     }
 }

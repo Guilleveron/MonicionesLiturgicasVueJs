@@ -38,24 +38,29 @@
             </div> 
         </nav>
         <ul id="box-search" v-on:click="ocultar_buscador()"></ul>
-        <div class="principal" v-on:click="ocultar_buscador()">
+        <div class="principal container-xl" v-on:click="ocultar_buscador()">
             <router-view/>  
        <!--  Aquí aparecen las vistas -->
             <Cookies/>
-            <Social/>
-        </div>       
-
+            
+        </div>  
+        <!-- COPYRIGHT & CONTACTO-->
+        <footer class="footer">
+            <p>
+                Para ponerse en contacto con nosotros, escribinos a <a href="mailto: monicionesliturgicas@gmail.com">monicionesliturgicas@gmail.com <i class="fas fa-envelope"></i></a>
+                <br>
+                Copyright © 2021 Moniciones Litúrgicas. Todos los derechos reservados.
+            </p>
+        </footer>     
     </div>
 </template>
 <script>
 import Cookies from '@/components/CompCookies'
-import Social from '@/components/CompSocial'
 
 export default {
   name: 'App',
   components: {
-      Cookies,
-      Social
+      Cookies
   },
   data(){
     return{

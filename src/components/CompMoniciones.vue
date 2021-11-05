@@ -1,5 +1,5 @@
 <template>
-    <div class="container-md">
+    <div class="container-md" id="todasLasMoniciones">
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
