@@ -31,6 +31,9 @@ export default {
   },
   methods:{
     //...mapActions([''])
+  },
+  mounted:{
+
   }
 }
 </script>
