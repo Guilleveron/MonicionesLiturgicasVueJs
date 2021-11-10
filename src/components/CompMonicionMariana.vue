@@ -2,7 +2,7 @@
   <div>
     <h2 class="fs-2 text-center">Monición Mariana</h2>
       <section class="banner-two">
-        <h4>{{ monicionMariana.titulo }} {{ monicionMariana.dia }} {{ monicionMariana.semana }}</h4>
+        <h4>Monición para festividad de {{ monicionMariana.titulo }} {{ monicionMariana.dia }} {{ monicionMariana.semana }}</h4>
         <p><b>Ciclo {{ monicionMariana.ciclo }} - <b>Tiempo:</b> {{ monicionMariana.tiempo }}</b></p>
         <h5>Monición de Entrada</h5>
         <p>{{ monicionMariana.entrada }}</p>

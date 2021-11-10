@@ -2,7 +2,7 @@
   <div>
     <h2 class="fs-2 text-center">Monición Especial</h2>
       <section class="banner-one">
-        <h4>{{ monicionEspecial.titulo }} {{ monicionEspecial.dia }} {{ monicionEspecial.semana }}</h4>
+        <h4>Monición para festividad de {{ monicionEspecial.titulo }} {{ monicionEspecial.dia }} {{ monicionEspecial.semana }}</h4>
         <p><b>Ciclo {{ monicionEspecial.ciclo }} - <b>Tiempo:</b> {{ monicionEspecial.tiempo }}</b></p>
         <h5>Monición de Entrada</h5>
         <p>{{ monicionEspecial.entrada }}</p>

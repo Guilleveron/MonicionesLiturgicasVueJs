@@ -14,7 +14,7 @@
             <div class="semanal">
               <a :href="'/monicion?titulo='+monicionesCarousel1.titulo+'&dia='+monicionesCarousel1.dia+'&semana='+monicionesCarousel1.semana+'&ciclo='+monicionesCarousel1.ciclo+'&tiempo='+monicionesCarousel1.tiempo+'&id='+monicionesCarousel1.id" target="_blank"><img src="@/assets/Domingo.jpg" class="d-block w-100" :alt="'Monición del '+monicionesCarousel1.titulo+' '+monicionesCarousel1.dia+' de la Semana '+monicionesCarousel1.semana+' del tiempo '+monicionesCarousel1.tiempo+'- Moniciones Liturgicas.com'"></a>
               <div class="carousel-caption d-md-block">
-                <h5>Monicion del {{monicionesCarousel1.titulo}} {{monicionesCarousel1.dia}} de la Semana {{monicionesCarousel1.semana}} del tiempo {{monicionesCarousel1.tiempo}} - Ciclo {{monicionesCarousel1.ciclo}}</h5>
+                <h5>Monición del {{monicionesCarousel1.titulo}} {{monicionesCarousel1.dia}} de la Semana {{monicionesCarousel1.semana}} del tiempo {{monicionesCarousel1.tiempo}} - Ciclo {{monicionesCarousel1.ciclo}}</h5>
                 <a class="boton" :href="'/monicion?titulo='+monicionesCarousel1.titulo+'&dia='+monicionesCarousel1.dia+'&semana='+monicionesCarousel1.semana+'&ciclo='+monicionesCarousel1.ciclo+'&tiempo='+monicionesCarousel1.tiempo+'&id='+monicionesCarousel1.id" target="_blank">Ver más <i class="fas fa-angle-double-right"></i></a>
               </div>      
             </div>
@@ -23,7 +23,7 @@
             <div class="semanal">
               <a :href="'/monicion?titulo='+monicionesCarousel2.titulo+'&dia='+monicionesCarousel2.dia+'&semana='+monicionesCarousel2.semana+'&ciclo='+monicionesCarousel2.ciclo+'&tiempo='+monicionesCarousel2.tiempo+'&id='+monicionesCarousel2.id" target="_blank"><img src="@/assets/Martes.jpg" class="d-block w-100" :alt="'Monición del '+monicionesCarousel2.titulo+' '+monicionesCarousel2.dia+' de la Semana '+monicionesCarousel2.semana+' del tiempo '+monicionesCarousel2.tiempo+'- Moniciones Liturgicas.com'"></a>
               <div class="carousel-caption d-md-block">
-                <h5>Monicion del {{monicionesCarousel2.titulo}} {{monicionesCarousel2.dia}} de la Semana {{monicionesCarousel2.semana}} del tiempo {{monicionesCarousel2.tiempo}} - Ciclo {{monicionesCarousel2.ciclo}}</h5>
+                <h5>Monición del {{monicionesCarousel2.titulo}} {{monicionesCarousel2.dia}} de la Semana {{monicionesCarousel2.semana}} del tiempo {{monicionesCarousel2.tiempo}} - Ciclo {{monicionesCarousel2.ciclo}}</h5>
                 <a class="boton" :href="'/monicion?titulo='+monicionesCarousel2.titulo+'&dia='+monicionesCarousel2.dia+'&semana='+monicionesCarousel2.semana+'&ciclo='+monicionesCarousel2.ciclo+'&tiempo='+monicionesCarousel2.tiempo+'&id='+monicionesCarousel2.id" target="_blank">Ver más <i class="fas fa-angle-double-right"></i></a>
               </div>      
             </div>
@@ -32,7 +32,7 @@
             <div class="semanal">
               <a :href="'/monicion?titulo='+monicionesCarousel3.titulo+'&dia='+monicionesCarousel3.dia+'&semana='+monicionesCarousel3.semana+'&ciclo='+monicionesCarousel3.ciclo+'&tiempo='+monicionesCarousel3.tiempo+'&id='+monicionesCarousel3.id" target="_blank"><img src="@/assets/Jueves.jpg" class="d-block w-100" :alt="'Monición del '+monicionesCarousel3.titulo+' '+monicionesCarousel3.dia+' de la Semana '+monicionesCarousel3.semana+' del tiempo '+monicionesCarousel3.tiempo+'- Moniciones Liturgicas.com'"></a>
               <div class="carousel-caption d-md-block">
-                <h5>Monicion del {{monicionesCarousel3.titulo}} {{monicionesCarousel3.dia}} de la Semana {{monicionesCarousel3.semana}} del tiempo {{monicionesCarousel3.tiempo}} - Ciclo {{monicionesCarousel3.ciclo}}</h5>
+                <h5>Monición del {{monicionesCarousel3.titulo}} {{monicionesCarousel3.dia}} de la Semana {{monicionesCarousel3.semana}} del tiempo {{monicionesCarousel3.tiempo}} - Ciclo {{monicionesCarousel3.ciclo}}</h5>
                 <a class="boton" :href="'/monicion?titulo='+monicionesCarousel3.titulo+'&dia='+monicionesCarousel3.dia+'&semana='+monicionesCarousel3.semana+'&ciclo='+monicionesCarousel3.ciclo+'&tiempo='+monicionesCarousel3.tiempo+'&id='+monicionesCarousel3.id" target="_blank">Ver más <i class="fas fa-angle-double-right"></i></a>
               </div>      
             </div>

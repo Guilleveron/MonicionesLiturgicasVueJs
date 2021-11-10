@@ -6,7 +6,7 @@
               <div class="dominical">
                   <a :href="'/monicion?titulo='+monicionDominical1.titulo+'&dia='+monicionDominical1.dia+'&semana='+monicionDominical1.semana+'&ciclo='+monicionDominical1.ciclo+'&tiempo='+monicionDominical1.tiempo+'&id='+monicionDominical1.id" target="_blank"><img src="@/assets/Miercoles.jpg" class="card-img-top" :alt="'Monición del '+monicionDominical1.titulo+' '+monicionDominical1.dia+' de la Semana '+monicionDominical1.semana+' del tiempo '+monicionDominical1.tiempo+'- Moniciones Liturgicas.com'"></a>
                   <div class="card-body">
-                      <h5 class="card-title">Monicion del {{ monicionDominical1.titulo }} {{ monicionDominical1.dia }} de la Semana {{ monicionDominical1.semana }} del tiempo {{ monicionDominical1.tiempo }} - Ciclo {{ monicionDominical1.ciclo }}</h5>
+                      <h5 class="card-title">Monición del {{ monicionDominical1.titulo }} {{ monicionDominical1.dia }} de la Semana {{ monicionDominical1.semana }} del tiempo {{ monicionDominical1.tiempo }} - Ciclo {{ monicionDominical1.ciclo }}</h5>
                       <a class="boton3" :href="'/monicion?titulo='+monicionDominical1.titulo+'&dia='+monicionDominical1.dia+'&semana='+monicionDominical1.semana+'&ciclo='+monicionDominical1.ciclo+'&tiempo='+monicionDominical1.tiempo+'&id='+monicionDominical1.id" target="_blank">Ver más <i class="fas fa-angle-double-right"></i></a>
                   </div>
               </div>
@@ -15,7 +15,7 @@
               <div class="dominical">
                   <a :href="'/monicion?titulo='+monicionDominical2.titulo+'&dia='+monicionDominical2.dia+'&semana='+monicionDominical2.semana+'&ciclo='+monicionDominical2.ciclo+'&tiempo='+monicionDominical2.tiempo+'&id='+monicionDominical2.id" target="_blank"><img src="@/assets/Jueves.jpg" class="card-img-top" :alt="'Monición del '+monicionDominical2.titulo+' '+monicionDominical2.dia+' de la Semana '+monicionDominical2.semana+' del tiempo '+monicionDominical2.tiempo+'- Moniciones Liturgicas.com'"></a>
                   <div class="card-body">
-                      <h5 class="card-title">Monicion del {{ monicionDominical2.titulo }} {{ monicionDominical2.dia }} de la Semana {{ monicionDominical2.semana }} del tiempo {{ monicionDominical2.tiempo }} - Ciclo {{ monicionDominical2.ciclo }}</h5>
+                      <h5 class="card-title">Monición del {{ monicionDominical2.titulo }} {{ monicionDominical2.dia }} de la Semana {{ monicionDominical2.semana }} del tiempo {{ monicionDominical2.tiempo }} - Ciclo {{ monicionDominical2.ciclo }}</h5>
                       <a class="boton3" :href="'/monicion?titulo='+monicionDominical2.titulo+'&dia='+monicionDominical2.dia+'&semana='+monicionDominical2.semana+'&ciclo='+monicionDominical2.ciclo+'&tiempo='+monicionDominical2.tiempo+'&id='+monicionDominical2.id" target="_blank">Ver más <i class="fas fa-angle-double-right"></i></a>
                   </div>
               </div>
@@ -24,7 +24,7 @@
               <div class="dominical">
                   <a :href="'/monicion?titulo='+monicionDominical3.titulo+'&dia='+monicionDominical3.dia+'&semana='+monicionDominical3.semana+'&ciclo='+monicionDominical3.ciclo+'&tiempo='+monicionDominical3.tiempo+'&id='+monicionDominical3.id" target="_blank"><img src="@/assets/Viernes.jpg" class="card-img-top" :alt="'Monición del '+monicionDominical3.titulo+' '+monicionDominical3.dia+' de la Semana '+monicionDominical3.semana+' del tiempo '+monicionDominical3.tiempo+'- Moniciones Liturgicas.com'"></a>
                   <div class="card-body">
-                      <h5 class="card-title">Monicion del {{ monicionDominical3.titulo }} {{ monicionDominical3.dia }} de la Semana {{ monicionDominical3.semana }} del tiempo {{ monicionDominical3.tiempo }} - Ciclo {{ monicionDominical3.ciclo }}</h5>
+                      <h5 class="card-title">Monición del {{ monicionDominical3.titulo }} {{ monicionDominical3.dia }} de la Semana {{ monicionDominical3.semana }} del tiempo {{ monicionDominical3.tiempo }} - Ciclo {{ monicionDominical3.ciclo }}</h5>
                       <a class="boton3" :href="'/monicion?titulo='+monicionDominical3.titulo+'&dia='+monicionDominical3.dia+'&semana='+monicionDominical3.semana+'&ciclo='+monicionDominical3.ciclo+'&tiempo='+monicionDominical3.tiempo+'&id='+monicionDominical3.id" target="_blank">Ver más <i class="fas fa-angle-double-right"></i></a>
                   </div>
               </div>

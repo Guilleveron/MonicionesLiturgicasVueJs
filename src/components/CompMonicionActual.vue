@@ -1,6 +1,6 @@
 <template>
   <div class="showcase">
-    <h4>Monicion del Día {{ dia }}</h4>
+    <h4>Monición del Día {{ dia }}</h4>
     <h4>{{ monicionDelDia.titulo }} {{ monicionDelDia.dia }} {{ monicionDelDia.semana }}</h4>
     <p><b>Ciclo {{ monicionDelDia.ciclo }} - Tiempo {{ monicionDelDia.tiempo }}</b><img class="imgC" src="@/assets/casullaVerde.svg" alt="Moniciones Litúrgicas"></p>
     <h5>Monición de Entrada</h5>
